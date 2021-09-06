@@ -1,0 +1,4 @@
+﻿  game.cpp
+C:\Users\Pillow\Desktop\goose game\game.cpp(227,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Pillow\Desktop\goose game\game.cpp(414,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GooseGame.vcxproj -> C:\Users\Pillow\Desktop\GooseGame\Debug\GooseGame.exe
