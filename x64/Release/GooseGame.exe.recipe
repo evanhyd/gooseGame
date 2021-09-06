@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Pillow\Desktop\gooseGame\Release\GooseGame.exe</FullPath>
+      <FullPath>C:\Users\Pillow\Desktop\gooseGame\x64\Release\GooseGame.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
