@@ -8,6 +8,8 @@ with your geese. Once they level up, they can develop unique characteristics. On
 kingdom also supports the feature of mating. Once a pair of goose is level 18+ and are close to each other, they will start to produce baby goose. Baby goose are also unique 
 because they can inherit their parent's name and faculties. 
 
+
+
 TLDR: This is a goose farm simulator game submitted as a project for the se26 hackathon. Long live the waterloo geese #gooseLifeMatters!
 
 Running the game: Try both 32 and 64bits versions in case the anti-virus blocks it. You may need vc runtime in rare cases. After you open the game, please adjust windows consule font size to a smaller value so you can see the whole farm. 
