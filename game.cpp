@@ -25,7 +25,7 @@ enum
 
 
 
-const int MAXNAMENUMBER = 16;
+const int MAXNAMENUMBER = 14;
 const int MAXGOOSENUMBER = 200;
 const int MATING_DISTANCE = 4;
 const int SPEED_X_UPPER = 3;
@@ -67,7 +67,7 @@ Goose createRandomGoose(const char* name)
 
     goose.size = TINY;
     goose.level = 1;
-    goose.exp = float(rand() % 1024);
+    goose.exp = float(rand() % 10240);
     while (goose.exp >= 0.5f * goose.level * goose.level)
     {
         goose.exp -= 0.5f * goose.level * goose.level;
@@ -200,7 +200,7 @@ enum
     CAFEFOOD,
 };
 const int MAXFOODNUMBER = 6;
-int money = 69;
+int money = 6969;
 float foodValue[MAXFOODNUMBER] = { 3.0f, 15.0f, 9.0f, 6.0f, 1.5f, 30.0f };
 const char* foodName[MAXFOODNUMBER] = { "Grass", "Berries", "Flowers", "Seeds", "Stem", "Cafefood" };
 int foodPrice[MAXFOODNUMBER] = { 10, 45, 28, 19, 6, 85 };
@@ -267,10 +267,10 @@ void mating()
             int x_diff = gooseList[i].x - gooseList[j].x;
             int y_diff = gooseList[i].y - gooseList[j].y;
 
-            int distance = sqrtf(float(x_diff * x_diff + y_diff * y_diff));
+            int distance = int(sqrtf(float(x_diff * x_diff + y_diff * y_diff)));
             if (distance <= MATING_DISTANCE)
             {
-                float mate_chance = double(rand()) / double(RAND_MAX);
+                float mate_chance = float(rand()) / float(RAND_MAX);
                 if (mate_chance < MATINGRATE)
                 {
 
@@ -461,7 +461,7 @@ void drawGoose()
         //skip the dead goose
         if (gooseList[i].health <= 0) continue;
 
-        printf("Name: %16s    Health: %3i    Level: %2i    EXP: %.2f/%.2f\n", gooseList[i].name, gooseList[i].health, gooseList[i].level, gooseList[i].exp, 0.5f * gooseList[i].level * gooseList[i].level);
+        printf("Name: %16s    Health: %3i    Level: %2i    EXP: %.2f/%.2f\n", gooseList[i].name, gooseList[i].health, gooseList[i].level, gooseList[i].exp, 0.5f * float(gooseList[i].level) * float(gooseList[i].level));
     }
     printf("\nBank: %i\n", money);
 }
@@ -485,7 +485,7 @@ void feedMenu(int gooseIndex)
 
         if (options == MAXFOODNUMBER) break;
 
-        int cost = foodValue[options];
+        int cost = foodPrice[options];
         if (money < cost)
         {
             printf("hahahahah u broke\a\n");
@@ -608,23 +608,25 @@ int main (void)
     srand(time(NULL));
  
 
-    Goose g = createRandomGoose("MIKE");
+    Goose g = createRandomGoose("NEVER");
     addGoose(g);
-    g = createRandomGoose("MICHAEL");
+    g = createRandomGoose("ZAC");
     addGoose(g);
-    g = createRandomGoose("JORDON");
+    g = createRandomGoose("UP");
     addGoose(g);
-    g = createRandomGoose("TRUMP");
+    g = createRandomGoose("COOPER");
     addGoose(g);
-    g = createRandomGoose("DONALD");
+    g = createRandomGoose("MARSHMALLOW");
     addGoose(g);
-    g = createRandomGoose("TRUDEAU");
+    g = createRandomGoose("GIVE");
     addGoose(g);
     g = createRandomGoose("POTATO");
     addGoose(g);
-    g = createRandomGoose("AARON");
+    g = createRandomGoose("YOU");
     addGoose(g);
-    g = createRandomGoose("COOPER");
+    g = createRandomGoose("WAITE");
+    addGoose(g);
+    g = createRandomGoose("GONNA");
     addGoose(g);
 
 
