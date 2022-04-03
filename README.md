@@ -1,3 +1,5 @@
+# [SE26 Hackthon Best code && Funniest Hack winner lol](https://devpost.com/software/goose-kingdom)  
+
 # gooseLifeMatters 
 
 Honk Honk welcome to the goose kingdom!
@@ -13,3 +15,6 @@ because they can inherit their parent's name and faculties.
 TLDR: This is a goose farm simulator game submitted as a project for the se26 hackathon. Long live the waterloo geese #gooseLifeMatters!
 
 Running the game: Try both 32 and 64bits versions in case the anti-virus blocks it. You may need vc runtime in rare cases. After you open the game, please adjust windows consule font size to a smaller value so you can see the whole farm. 
+
+
+
